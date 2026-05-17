@@ -1,0 +1,6 @@
+*.jpeg
+*.jpg
+*.png
+*.gif
+*.webp
+.DS_Store
