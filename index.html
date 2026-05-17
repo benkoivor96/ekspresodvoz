@@ -181,38 +181,6 @@
     details[open] summary::after { content: '−'; }
     details .faq-body { padding: 0 20px 18px; font-size: 0.9rem; color: #555; line-height: 1.7; }
 
-    /* ── CONTACT FORM ── */
-    .form-wrap { max-width: 600px; margin: 0 auto; }
-    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
-    @media (max-width: 500px) { .form-row { grid-template-columns: 1fr; } }
-    .form-group { display: flex; flex-direction: column; gap: 6px; margin-bottom: 14px; }
-    .form-group label { font-size: 0.85rem; font-weight: 700; color: #444; text-transform: uppercase; letter-spacing: 0.5px; }
-    .form-group input, .form-group textarea, .form-group select {
-      padding: 12px 14px; border: 2px solid #e0e0e0; border-radius: 6px;
-      font-size: 1rem; font-family: inherit; transition: border-color 0.2s; outline: none; width: 100%;
-    }
-    .form-group input:focus, .form-group textarea:focus, .form-group select:focus { border-color: var(--yellow); }
-    .form-group textarea { min-height: 100px; resize: vertical; }
-    .btn-form-submit {
-      width: 100%; padding: 16px; background: var(--yellow); color: var(--black);
-      font-size: 1.1rem; font-weight: 900; border: none; border-radius: 8px; cursor: pointer;
-      transition: background 0.2s, transform 0.15s; text-transform: uppercase; letter-spacing: 0.5px;
-    }
-    .btn-form-submit:hover { background: var(--yellow-dark); transform: scale(1.01); }
-    .form-success { display: none; background: #f0fff4; border: 2px solid #25D366; border-radius: 8px; padding: 20px; text-align: center; font-weight: 700; color: #1a7a3c; margin-top: 16px; font-size: 1rem; }
-    .form-note { text-align: center; margin-top: 12px; font-size: 0.85rem; color: #888; }
-    .form-or { text-align: center; font-size: 0.85rem; color: #aaa; margin: 20px 0 16px; position: relative; }
-    .form-or::before, .form-or::after { content: ''; position: absolute; top: 50%; width: 42%; height: 1px; background: #ddd; }
-    .form-or::before { left: 0; }
-    .form-or::after { right: 0; }
-    .form-wa-btn {
-      display: flex; align-items: center; justify-content: center; gap: 10px;
-      background: var(--green); color: var(--white); font-weight: 800; font-size: 1rem;
-      padding: 14px; border-radius: 8px; text-decoration: none;
-      transition: background 0.2s; width: 100%;
-    }
-    .form-wa-btn:hover { background: var(--green-dark); }
-
     /* ── FINAL CTA ── */
     .cta-block { background: var(--yellow); text-align: center; padding: 70px 20px; }
     .cta-block h2 { font-size: clamp(1.6rem, 5vw, 2.6rem); font-weight: 900; text-transform: uppercase; color: var(--black); margin-bottom: 10px; }
@@ -424,13 +392,6 @@
       </div>
       <div class="review-card">
         <div class="review-stars">★★★★★</div>
-        <p class="review-text">"Imali smo zapusten stan iza pokojnog roditelja — haos. Momci su za 4 sata sve odvezli i stan ostavili uredan. Nevjerojatno!"</p>
-        <div class="review-author">Ana P.</div>
-        <div class="review-location">Sesvete</div>
-        <span class="review-service">Ciscenje napustenog stana</span>
-      </div>
-      <div class="review-card">
-        <div class="review-stars">★★★★★</div>
         <p class="review-text">"Dvoriste nisam mogao sam sredi ti godinama. Ekspres Odvoz je za jedan dan sve iskrcio i odvezao. Stvarno ekspresno!"</p>
         <div class="review-author">Ivan M.</div>
         <div class="review-location">Velika Gorica</div>
@@ -514,56 +475,6 @@
   </div>
 </section>
 
-<!-- ═══════════════════════════════ FORMA ═══════════════════════════════ -->
-<section>
-  <div class="container">
-    <p class="section-label">Brzi upit</p>
-    <h2 class="section-title">Posaljite upit<br><span style="font-size:0.65em;font-weight:700;color:#888;text-transform:none">— javimo se u roku sat vremena</span></h2>
-    <div class="form-wrap">
-      <form id="contactForm" onsubmit="submitForm(event)">
-        <div class="form-row">
-          <div class="form-group">
-            <label for="fname">Ime i prezime *</label>
-            <input type="text" id="fname" name="ime" required placeholder="Npr. Marko Horvat" />
-          </div>
-          <div class="form-group">
-            <label for="fphone">Telefon *</label>
-            <input type="tel" id="fphone" name="telefon" required placeholder="09X XXX XXXX" />
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="fservice">Usluga koja vas zanima</label>
-          <select id="fservice" name="usluga">
-            <option value="">— Odaberite uslugu —</option>
-            <option>Odvoz glomaznog otpada</option>
-            <option>Ciscenje napustenog stana ili kuce</option>
-            <option>Praznjenje podruma / tavana / garaze</option>
-            <option>Krcenje parcele ili dvorista</option>
-            <option>Rusenje i uklanjanje drveca</option>
-            <option>Priprema prostora za adaptaciju</option>
-            <option>Selidba i prijevoz</option>
-            <option>Nesto drugo</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="fmsg">Kratki opis</label>
-          <textarea id="fmsg" name="poruka" placeholder="Opiste kratko sto trebate (npr. 'Imam pun podrum stvari, trebam sve odvesti')..."></textarea>
-        </div>
-        <button type="submit" class="btn-form-submit">Posalji upit — javimo se odmah</button>
-        <p class="form-note">* Obavezna polja. Nema spama, samo se javljamo s ponudom.</p>
-      </form>
-      <div class="form-success" id="formSuccess">
-        ✅ Upit primljen! Javimo vam se uskoro na broj koji ste ostavili.
-      </div>
-      <div class="form-or">ili</div>
-      <a href="https://wa.me/385976043230?text=Zanima%20me%20vasa%20usluga%2C%20molim%20kontaktirajte%20me." class="form-wa-btn" target="_blank" rel="noopener" onclick="trackConv('whatsapp_form')">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-        Pisi direktno na WhatsApp
-      </a>
-    </div>
-  </div>
-</section>
-
 <!-- ═══════════════════════════════ FINALNI CTA ═══════════════════════════════ -->
 <div class="cta-block">
   <div class="container">
@@ -622,26 +533,6 @@
     if (typeof window.trackConversion === 'function') {
       window.trackConversion(label);
     }
-  }
-
-  /* ── Form submit (Formspree — zamijenite YOUR_FORM_ID ili spojite vlastiti backend) ── */
-  function submitForm(e) {
-    e.preventDefault();
-    var form = document.getElementById('contactForm');
-    var data = new FormData(form);
-
-    // Placeholder: ovdje dodajte Formspree endpoint ili vlastiti backend
-    // fetch('https://formspree.io/f/YOUR_FORM_ID', { method: 'POST', body: data, headers: { 'Accept': 'application/json' } })
-    //   .then(r => r.ok ? showSuccess() : alert('Greška, pokusajte ponovo.'));
-
-    // Za sada simulira uspjeh:
-    showSuccess();
-    trackConv('form_submit');
-  }
-
-  function showSuccess() {
-    document.getElementById('contactForm').style.display = 'none';
-    document.getElementById('formSuccess').style.display = 'block';
   }
 
   /* ── Exit intent popup ── */
