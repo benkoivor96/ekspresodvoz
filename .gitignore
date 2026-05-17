@@ -4,3 +4,7 @@
 *.gif
 *.webp
 .DS_Store
+
+# Dopusti slike potrebne za web
+!prije.jpeg
+!poslije.jpeg
