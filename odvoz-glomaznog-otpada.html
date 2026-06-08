@@ -14,6 +14,82 @@
   <meta property="og:site_name" content="Ekspres Odvoz" />
   <meta name="robots" content="index, follow" />
 
+  <!-- Schema.org LocalBusiness + FAQPage -->
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Ekspres Odvoz",
+      "description": "Profesionalan odvoz glomaznog otpada u Zagrebu i okolici. Stari namještaj, bijela tehnika, šuta, podrumi i tavani. Dolazimo u roku 24h.",
+      "url": "https://glomazniotpadzg.com",
+      "telephone": "+385976043230",
+      "priceRange": "$$",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Zagreb",
+        "addressRegion": "Grad Zagreb",
+        "addressCountry": "HR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 45.8150,
+        "longitude": 15.9819
+      },
+      "areaServed": [
+        { "@type": "City", "name": "Zagreb" },
+        { "@type": "City", "name": "Sesvete" },
+        { "@type": "City", "name": "Velika Gorica" },
+        { "@type": "City", "name": "Zaprešić" },
+        { "@type": "City", "name": "Samobor" },
+        { "@type": "City", "name": "Dugo Selo" }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Usluge odvoza otpada",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Odvoz glomaznog otpada Zagreb" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Odvoz bijele tehnike Zagreb" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Odvoz šute i građevinskog otpada Zagreb" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pražnjenje podruma i tavana Zagreb" } }
+        ]
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Koliko košta odvoz glomaznog otpada u Zagrebu?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Cijena ovisi o količini i vrsti otpada te lokaciji u Zagrebu. Nudimo besplatnu procjenu na licu mjesta — dolazimo, pogledamo i damo konkretnu cifru bez obaveze. Nema skrivenih troškova." }
+        },
+        {
+          "@type": "Question",
+          "name": "Kada možete doći po glomazni otpad?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Radimo 0-24h, svakog dana. Često smo dostupni isti ili sljedeći dan. Nazovite 097 604 3230 i dogovorimo termin koji vama odgovara." }
+        },
+        {
+          "@type": "Question",
+          "name": "Što sve odvozite?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Odvozimo stari namještaj, bijelu tehniku, madrace, šutu i građevinski otpad, vrtni otpad, metal, drvo i sve ostalo glomazno. Ako niste sigurni — samo nazovite." }
+        },
+        {
+          "@type": "Question",
+          "name": "Trebam li biti prisutan za vrijeme odvoza?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Nije nužno. Dogovorimo detalje unaprijed i naša ekipa može obaviti posao bez vašeg prisustva — samo nam osigurajte pristup prostoru." }
+        }
+      ]
+    }
+  ]
+  </script>
+
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18172294169"></script>
   <script>
@@ -398,6 +474,7 @@
 
 <!-- ════════ HERO ════════ -->
 <header class="hero" id="top">
+  <img src="crane-grab-scrap-hero.jpg" alt="Grajfer kuka utovaruje glomazni otpad — odvoz glomaznog otpada Zagreb" style="position:absolute;width:1px;height:1px;opacity:0;pointer-events:none;" aria-hidden="true" />
   <div class="hero-inner">
     <span class="hero-pill"><span class="dot"></span> Zagreb i okolica · Dolazak u 24h</span>
     <h1>Odvoz <span class="hl">glomaznog otpada</span></h1>
@@ -427,11 +504,20 @@
 </div>
 
 
+<!-- ════════ UVODNI TEKST (SEO) ════════ -->
+<section class="block" style="padding:48px 0 0;">
+  <div class="wrap" style="max-width:820px;">
+    <p style="font-size:1.08rem;color:var(--text);line-height:1.75;">
+      <strong>Ekspres Odvoz</strong> pruža brzu i pouzdanu uslugu <strong>odvoza glomaznog otpada u Zagrebu i okolici</strong> — od starih sofa i hladnjaka do šute i građevinskog otpada. Radimo svaki dan, 0–24h, s iskusnom ekipom od 5+ djelatnika. Dolazimo na vašu adresu, sami iznosimo i utovarujemo, a prostor ostavljamo čistim. <strong>Besplatna procjena na licu mjesta</strong> — bez obaveze, bez skrivenih troškova.
+    </p>
+  </div>
+</section>
+
 <!-- ════════ ŠTO ODVOZIMO ════════ -->
 <section class="block soft" id="usluge">
   <div class="wrap">
     <span class="eyebrow">Naše usluge</span>
-    <h2 class="h">Što sve odvozimo?</h2>
+    <h2 class="h">Odvoz glomaznog otpada u Zagrebu — što sve vozimo?</h2>
     <p class="lead">Gotovo sve što vam smeta — bez obzira na količinu. Niste sigurni? Samo nazovite i pitajte.</p>
     <div class="cat-grid">
       <div class="cat">
@@ -540,31 +626,31 @@
 <section class="block" id="faq">
   <div class="wrap">
     <span class="eyebrow">Česta pitanja</span>
-    <h2 class="h" style="text-align:center;">Imate pitanja?</h2>
+    <h2 class="h" style="text-align:center;">Česta pitanja o odvozu glomaznog otpada u Zagrebu</h2>
     <div class="faq">
       <details>
-        <summary>Koliko košta odvoz otpada?</summary>
-        <div class="faq-body">Cijena ovisi o količini i vrsti otpada te lokaciji. Zato nudimo <strong>besplatnu procjenu na licu mjesta</strong> — dolazimo, pogledamo i damo vam konkretnu cifru bez obaveze. Nema skrivenih troškova.</div>
+        <summary>Koliko košta odvoz glomaznog otpada u Zagrebu?</summary>
+        <div class="faq-body">Cijena odvoza glomaznog otpada u Zagrebu ovisi o količini i vrsti otpada te lokaciji preuzimanja. Zato nudimo <strong>besplatnu procjenu na licu mjesta</strong> — dolazimo, pogledamo i damo vam konkretnu cifru bez ikakve obaveze. Nema skrivenih troškova ni naknadnih iznenađenja — cijena se dogovara unaprijed.</div>
       </details>
       <details>
-        <summary>Kada možete doći?</summary>
-        <div class="faq-body">Često smo dostupni <strong>isti ili sljedeći radni dan</strong>. Nazovite i dogovorimo termin koji vama odgovara, uključujući subotu.</div>
+        <summary>Kada možete doći po glomazni otpad?</summary>
+        <div class="faq-body">Radimo <strong>0–24h, svaki dan</strong> — uključujući vikende i praznike. Često smo dostupni isti ili sljedeći dan. Nazovite 097 604 3230 ili pišite na WhatsApp i dogovorimo termin koji vama odgovara — prilagođavamo se vašem rasporedu.</div>
       </details>
       <details>
-        <summary>Što sve možete odvesti?</summary>
-        <div class="faq-body">Odvozimo gotovo sve: stari namještaj, bijelu tehniku, madrace, metale, građevinski otpad, vrtni otpad, raslinje i drvo. Ako niste sigurni — samo pitajte.</div>
+        <summary>Što sve možete odvesti kao glomazni otpad?</summary>
+        <div class="faq-body">Odvozimo gotovo sve: stari namještaj (sofe, ormare, krevete), bijelu tehniku (hladnjake, perilice, štednjake), madrace, metale, šutu i građevinski otpad, vrtni otpad, raslinje i drvo. Uslugu pružamo diljem Zagreba — od Sesveta do Zaprešića. Ako niste sigurni spada li vaš otpad u glomazni — samo nazovite i pitajte.</div>
       </details>
       <details>
         <summary>Trebam li biti prisutan za vrijeme odvoza?</summary>
-        <div class="faq-body">Nije nužno. Dogovorimo detalje unaprijed i naša ekipa može obaviti posao i bez vašeg prisustva. Samo nam osigurajte pristup prostoru.</div>
+        <div class="faq-body">Nije nužno. Dogovorimo detalje unaprijed i naša ekipa može obaviti posao i bez vašeg prisustva. Samo nam osigurajte pristup prostoru — stubištu, podrumu ili dvorištu. Nakon završenog posla možete provjeriti da je sve u redu.</div>
       </details>
       <details>
-        <summary>Iznosite li vi sve sami?</summary>
-        <div class="faq-body">Da — to je cijela poanta. <strong>Vi ne dižete ništa.</strong> Naša ekipa sve sama iznosi iz stana, podruma ili dvorišta, utovaruje i odvozi.</div>
+        <summary>Iznosite li vi sve sami iz stana ili podruma?</summary>
+        <div class="faq-body">Da — to je cijela poanta usluge. <strong>Vi ne dižete ništa.</strong> Naša ekipa sve sama iznosi iz stana, podruma, tavana ili dvorišta, utovaruje u vozilo i odvozi. Radimo pažljivo — bez ogrebotina po stubištu i zidovima.</div>
       </details>
       <details>
-        <summary>Radite li i vikendima?</summary>
-        <div class="faq-body">Da, radimo i subotom. Za nedjelju i praznike nazovite da provjerimo dostupnost. Trudimo se biti fleksibilni.</div>
+        <summary>Gdje odlažete odvezeni glomazni otpad?</summary>
+        <div class="faq-body">Sav otpad odlažemo na zakonski propisane načine — ovlaštena reciklažna dvorišta i centri za zbrinjavanje otpada u Zagrebu i okolici. Radimo odgovorno prema okolišu, a ono što se može reciklirati — reciklira se. Za otpad koji zahtijeva posebno zbrinjavanje (elektronika, bijela tehnika) koristimo ovlaštene servise.</div>
       </details>
     </div>
   </div>
