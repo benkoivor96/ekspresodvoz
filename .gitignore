@@ -9,3 +9,10 @@
 !prije.jpeg
 !poslije.jpeg
 !odvoz-glomaznog-otpada-zagreb.jpg
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
